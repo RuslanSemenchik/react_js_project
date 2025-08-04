@@ -1,13 +1,16 @@
 .user_card_components {
   display: flex;
-  flex-direction: column;
+ flex-direction: column;
   gap: 15px;
   width: 340px;
-  height: fit-content;
+  max-height: fit-content;
   border: 2px solid rgb(25, 16, 78);
   padding: 40px;
   margin: 30px;
   border-radius: 8px;
+  background-color: aqua;
+
+ 
 }
 .card_title {
   font-size: 30px;
@@ -22,6 +25,7 @@
 .avatar {
   width: 150px;
   height: 150px;
+  align-self: center;
 }
 .card_info {
   font-size: 24px;
