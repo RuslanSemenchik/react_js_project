@@ -1,14 +1,13 @@
 .button_component {
-display: flex;
-align-items: center;
-justify-content: center;
-outline : none;
-border : none;
-height: 70px;
-width: 100%;
-background-color: rgb(52, 52, 201);
-color: white;
-font-size: 20px;
-width: bold;
-cursor: pointer;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ outline : none;
+ border-radius : 4px;
+ height: 70px;
+ width: 470px;
+ background-color: rgba(31, 39, 245, 1);
+ color:  rgba(255, 255, 255, 1);
+ font-size: 20px;
+ cursor: pointer;
 }

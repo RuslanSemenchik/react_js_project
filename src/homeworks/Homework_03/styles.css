@@ -1,0 +1,15 @@
+.homework_03_page_wrapper {
+  display: flex;
+  flex: 1;
+  padding: 40px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: white
+}
+/* .buttonContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+} */
