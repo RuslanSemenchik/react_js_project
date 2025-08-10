@@ -14,7 +14,7 @@ function LoginForm(){
         <Input
         label={"Password"}
          name = {"password"}
-         type = {"number"}
+         type = {"password"}
          placeholder = {"Enter your password"}
         />
         
