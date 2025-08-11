@@ -34,14 +34,16 @@ function Counter (){
 
   const onMinus = () => {
     // Тут пишем логику по уменьшению значения счетчика на 1
-    setCount((prevValue) => {
+      console.log(count);
+      setCount((prevValue) => {
+      console.log(prevValue);
       return prevValue - 1;
     });
   };
   const onPlus = () => {
     // Тут пишем логику по увеличению значения счетчика на 1
-    console.log(count);
-    setCount((prevValue) => {
+      console.log(count);
+      setCount((prevValue) => {
       console.log(prevValue);
       return prevValue + 1;
     });
