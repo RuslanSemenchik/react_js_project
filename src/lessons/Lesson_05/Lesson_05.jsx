@@ -7,10 +7,30 @@ import "./styles.css"
 function Lesson_05 () {
     let [orders, setOrders] = useState([]);
     
+    
     const orderList = orders.map((orderItem)=>{
         return  <li key = {v4()} className="order_item">{orderItem}</li>
 
     })
+
+    const addOrder = (item)=>{
+        setOrders((prevValue)=>{
+                return [...prevValue,item]})
+        
+    }
+    
+
+    let [menu] = useState(["Burger","Fries","Cola","Salad","Ketchup","Ice-cream"]);
+
+    
+    const menuList = menu.map((menuItem)=>{
+    return (
+        <div className="button_control" key={v4()}>
+        <Button buttonName={menuItem} onClick={()=> addOrder(menuItem)}/>
+    </div>
+    )
+})
+
 
 
 
@@ -19,15 +39,11 @@ function Lesson_05 () {
     <div className="menu_wrapper">
     <h1 className="menu">Menu:</h1>
     <div className="button_wrapper">
+        {menuList}
 
         
-    <div className="button_control">
-        <Button buttonName="Burger" onClick={()=>{
-            setOrders((prevValue)=>{
-                return [...prevValue,"Burger"]})
-        }}/>
-    </div>
-    <div className="button_control">
+    
+    {/* <div className="button_control">
         <Button buttonName="Fries" onClick={()=>{
              setOrders((prevValue)=>{
                 return [...prevValue,"Fries"]})
@@ -56,7 +72,7 @@ function Lesson_05 () {
              setOrders((prevValue)=>{
                 return [...prevValue,"Ice-cream"]})
         }}/>
-    </div>
+    </div> */}
 
     </div>
     </div>
